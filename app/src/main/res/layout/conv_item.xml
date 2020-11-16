@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="60sp"
+    android:layout_marginTop="10sp"
+    android:layout_marginLeft="10sp"
+    android:layout_marginRight="10sp"
+    android:background="@color/conv_item_back_color">
+
+
+    <TextView
+        android:id="@+id/ci_t_recei"
+        android:layout_width="match_parent"
+        android:layout_height="27sp"
+        android:layout_marginTop="5sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10sp"
+        android:textSize="20sp"
+        android:text=""/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginBottom="5sp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/ci_t_usdrm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/hipen"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:text=" - "
+            app:layout_constraintStart_toEndOf="@id/ci_t_usdrm"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/ci_t_time"
+            android:layout_width="80sp"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toEndOf="@id/hipen"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

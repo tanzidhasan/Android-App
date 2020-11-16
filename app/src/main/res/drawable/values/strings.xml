@@ -1,0 +1,157 @@
+<resources>
+    <string name="app_name">NiRoB</string>
+    <string name="app_email">nirob1502@gmail.com</string>
+
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="blood_requests">Blood Requests</string>
+    <string name="donor_details">Donor Details</string>
+    <string name="conversations">Conversations</string>
+    <string name="about">About NiRoB</string>
+    <string name="info">Blood Tips</string>
+    <string name="signup">Sign Up</string>
+    <string name="login">Login</string>
+
+    <string name="navi_drawer_open">Open Navigation Drawer</string>
+    <string name="navi_drawer_close">Close Navigation Drawer</string>
+
+    <string name="home_wel">Welcome To NiRoB.</string>
+    <string name="or">or</string>
+    <string name="home_bldo">Donate Blood To Save Life.</string>
+
+    <string name="si_up_rsg_form">Registration Form</string>
+    <string name="si_up_log">Already logged in?</string>
+    <string name="si_up_fir_nam">First Name</string>
+    <string name="si_up_last_nam">Last Name</string>
+
+    <string name="si_up_gen">Gender</string>
+
+    <string-array name="gender_array">
+        <item>--Select a Gender--</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+
+    <string name="si_up_user_nam">Username</string>
+    <string name="si_up_roll_no">Roll No.</string>
+    <string name="email">Email</string>
+    <string name="pass">Password</string>
+    <string name="si_up_con_pass">Confirm Password</string>
+    <string name="si_up_bl_grp">Blood Group</string>
+    <string name="si_up_last_bl_do_dt">Last Blood Donation Date</string>
+    <string name="si_up_mob_no">Mobile No.</string>
+    <string name="si_up_dist">District</string>
+
+
+    <string-array name="blood_group_array">
+        <item>--Select a Blood Group--</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>ABO</item>
+    </string-array>
+
+
+    <string-array name="district_array">
+        <item>--Select a District--</item>
+        <item>Bagerhat</item>
+        <item>Bandarban</item>
+        <item>Barguna</item>
+        <item>Barisal</item>
+        <item>Bhola</item>
+        <item>Bogra</item>
+        <item>Brahmanbaria</item>
+        <item>Chandpur</item>
+        <item>Chapai Nawabganj</item>
+        <item>Chittagong</item>
+        <item>Chuadanga</item>
+        <item>Comilla</item>
+        <item>Cox\'s Bazar</item>
+        <item>Dhaka</item>
+        <item>Dinajpur</item>
+        <item>Faridpur</item>
+        <item>Feni</item>
+        <item>Gaibandha</item>
+        <item>Gazipur</item>
+        <item>Gopalganj</item>
+        <item>Habiganj</item>
+        <item>Jamalpur</item>
+        <item>Jessore</item>
+        <item>Jhalokati</item>
+        <item>Jhenaidah</item>
+        <item>Joypurhat</item>
+        <item>Khagrachhari</item>
+        <item>Khulna</item>
+        <item>Kishoreganj</item>
+        <item>Kurigram</item>
+        <item>Kushtia</item>
+        <item>Lakshmipur</item>
+        <item>Lalmonirhat</item>
+        <item>Madaripur</item>
+        <item>Magura</item>
+        <item>Manikganj</item>
+        <item>Meherpur</item>
+        <item>Moulvibazar</item>
+        <item>Munshiganj</item>
+        <item>Mymensingh</item>
+        <item>Naogaon</item>
+        <item>Narail</item>
+        <item>Narayanganj</item>
+        <item>Narsingdi</item>
+        <item>Natore</item>
+        <item>Netrokona</item>
+        <item>Nilphamari</item>
+        <item>Noakhali</item>
+        <item>Pabna</item>
+        <item>Panchagarh</item>
+        <item>Patuakhali</item>
+        <item>Pirojpur</item>
+        <item>Rajbari</item>
+        <item>Rajshahi</item>
+        <item>Rangamati</item>
+        <item>Rangpur</item>
+        <item>Satkhira</item>
+        <item>Shariatpur</item>
+        <item>Sherpur</item>
+        <item>Sirajganj</item>
+        <item>Sunamganj</item>
+        <item>Sylhet</item>
+        <item>Tangail</item>
+        <item>Thakurgaon</item>
+    </string-array>
+
+    <string name="si_up_sub">Submit</string>
+
+    <string name="log_in_form">Login Form</string>
+    <string name="log_in_reg">New Here?</string>
+    <string name="for_pass">Forgot Password?</string>
+
+    <string name="about_nir">
+        For a very long time, blood is donated for human and by human.
+
+    </string>
+
+
+    <string name="todo">TODO</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    For a very long time, blood is donated for human and by human. In accident or operation, if
+    there is continuous bleeding, a lot of blood will need. For critical situation in pregnancy
+    operation or any kind of big accident, donating blood is compulsory.
+    Alternative for human blood can only be safe(NIrapod) human blood. From humanity and for
+    donating safe blood, journey of freewill blood donating club of Rajshahi University of
+    Engineering and Technology(RUET) "NIrapod ROkter Bondhon(NIROB)" was started by student of RUET.
+    NIrapod ROkter Bondhon(NIROB) is a volunteer club of RUET. Spreading the freewill of donating
+    blood among everyone is the our real aim.
+    "Donate Blood, Save Life."
+
+
+</resources>

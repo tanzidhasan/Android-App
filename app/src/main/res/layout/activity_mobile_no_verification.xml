@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/mob_veri_back_color"
+    tools:context=".MobileNoVerificationActivity">
+
+
+    <TextView
+        android:id="@+id/t_mv_counttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resend Code in : 00:00"
+        android:textSize="20sp"
+        />
+
+
+    <Button
+        android:id="@+id/bt_mv_re_code"
+        android:layout_width="130sp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Resend Code"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:background="@drawable/round_button"
+        />
+
+    <ProgressBar
+        android:id="@+id/pb_mv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Enter Verification Code">
+
+        <EditText
+            android:id="@+id/et_mv_veri_code"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_gravity="center"
+            android:textAlignment="center"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/bt_mv_veri"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="@color/ash"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/round_button"
+
+        />
+
+
+
+
+</LinearLayout>

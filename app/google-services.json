@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "703088158020",
+    "firebase_url": "https://nirob-ec449.firebaseio.com",
+    "project_id": "nirob-ec449",
+    "storage_bucket": "nirob-ec449.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:703088158020:android:ce2c66952546b78b45e311",
+        "android_client_info": {
+          "package_name": "com.example.nirob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "703088158020-s2vc603d1ojclo5seti6blr3bk3bv5dr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nirob",
+            "certificate_hash": "3c5b8f25549091482b2eb5b4a358023b108e611b"
+          }
+        },
+        {
+          "client_id": "703088158020-sleguhu98qcpvq9kvi7u0c2o1n9m80fe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzr0zgLgddrHMKlnRAddEHeCy2_68qM-Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "703088158020-sleguhu98qcpvq9kvi7u0c2o1n9m80fe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

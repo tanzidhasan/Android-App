@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    tool:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/menu_home"
+              android:icon="@drawable/ic_menu_home"
+              android:title="@string/home"
+            />
+        <item android:id="@+id/menu_profile"
+            android:icon="@drawable/ic_menu_profile"
+            android:title="@string/profile"
+            />
+
+        <item android:id="@+id/menu_blood_request"
+            android:icon="@drawable/ic_menu_blood_request"
+            android:title="@string/blood_requests"
+            />
+
+        <item android:id="@+id/menu_donor_details"
+            android:icon="@drawable/ic_menu_donor_details"
+            android:title="@string/donor_details"
+            />
+
+        <item android:id="@+id/menu_conversations"
+            android:icon="@drawable/ic_menu_conversations"
+            android:title="@string/conversations"
+            />
+
+    </group>
+    <item android:title="App">
+        <menu>
+            <item android:id="@+id/menu_about"
+                android:icon="@drawable/ic_menu_about"
+                android:title="@string/about"
+                />
+            <item android:id="@+id/menu_info"
+                android:icon="@drawable/ic_menu_info"
+                android:title="@string/info"
+                />
+        </menu>
+    </item>
+
+
+</menu>

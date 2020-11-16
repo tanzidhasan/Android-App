@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/profile_back_color">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/p_lay_own_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/p_post_layout">
+
+            <TextView
+                android:id="@+id/t_own_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10sp"
+                android:text="Own Info"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/p_full_nam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/round_button"
+                android:gravity=""
+                android:orientation="horizontal"
+                android:paddingStart="15sp"
+                android:paddingEnd="15sp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:gravity="center"
+                    android:text="Full Name : "
+                    android:textColor="@color/profile_text_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/p_d_full_nam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:gravity="center"
+                    android:textColor="@color/profile_data_color"
+                    android:textSize="17sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/p_gen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/round_button"
+                android:gravity="center"
+                android:paddingStart="15sp"
+                android:paddingEnd="15sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:gravity="center"
+                    android:text="Gender : "
+                    android:textColor="@color/profile_text_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/p_d_gen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:gravity="center"
+                    android:textColor="@color/profile_data_color"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/p_roll_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/round_button"
+                android:gravity="center"
+                android:paddingStart="15sp"
+                android:paddingEnd="15sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:gravity="center"
+                    android:text="Roll No. : "
+                    android:textColor="@color/profile_text_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/p_d_roll_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:gravity="center"
+                    android:textColor="@color/profile_data_color"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/p_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/round_button"
+                android:gravity="center"
+                android:paddingStart="15sp"
+                android:paddingEnd="15sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:gravity="center"
+                    android:text="Email : "
+                    android:textColor="@color/profile_text_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/p_d_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:gravity="center"
+                    android:textColor="@color/profile_data_color"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/p_bl_grp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/round_button"
+                android:gravity="center"
+                android:paddingStart="15sp"
+                android:paddingEnd="15sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:gravity="center"
+                    android:text="Blood Group : "
+                    android:textColor="@color/profile_text_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/p_d_bl_grp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:gravity="center"
+                    android:textColor="@color/profile_data_color"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p_l_don_bl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8sp"
+                android:visibility="gone"
+                android:background="@drawable/round_button"
+                android:gravity="center"
+                android:paddingStart="15sp"
+                android:paddingEnd="15sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/profile_text_color"
+                    android:text="Ever Donated Blood ? : "
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/p_don_bl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:gravity="center"
+                    android:textColor="@color/profile_data_color"
+                    android:layout_gravity="center"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/p_l_last_bl_do_dt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/round_button"
+                android:gravity="center"
+                android:visibility="gone"
+                android:paddingStart="15sp"
+                android:paddingEnd="15sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:gravity="center"
+                    android:text="Last Blood Donation Date : "
+                    android:textColor="@color/profile_text_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/p_d_last_bl_do_dt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:gravity="center"
+                    android:textColor="@color/profile_data_color"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/round_button"
+                android:gravity="center"
+                android:paddingStart="15sp"
+                android:paddingEnd="15sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/profile_text_color"
+                    android:text="Want to Donate Blood ? : "
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/p_wan_don"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:gravity="center"
+                    android:textColor="@color/profile_data_color"
+                    android:layout_gravity="center"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/p_mob_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/round_button"
+                android:gravity="center"
+                android:paddingStart="15sp"
+                android:paddingEnd="15sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:gravity="center"
+                    android:text="Mobile No. : "
+                    android:textColor="@color/profile_text_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/p_d_mob_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:gravity="center"
+                    android:textColor="@color/profile_data_color"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/p_dist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/round_button"
+                android:gravity="center"
+                android:paddingStart="15sp"
+                android:paddingEnd="15sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:gravity="center"
+                    android:text="District : "
+                    android:textColor="@color/profile_text_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/p_d_dist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:gravity="center"
+                    android:textColor="@color/profile_data_color"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.25"/>
+
+
+        <LinearLayout
+            android:id="@+id/p_post_layout"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="500sp"
+            android:layout_marginTop="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/p_lay_own_info"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_gravity="center"
+                android:text="Own Posts"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+                android:id="@+id/pp_t_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150sp"
+                android:text="No Posts"
+                android:visibility="invisible"
+                android:textSize="35sp"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:id="@+id/pp_swiperefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/pp_recycleview"
+                    android:paddingBottom="10sp"
+                    android:visibility="invisible"
+                    android:clipToPadding="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

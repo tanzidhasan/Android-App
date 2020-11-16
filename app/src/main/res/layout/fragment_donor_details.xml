@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/dd_back_color">
+
+
+    <Button
+        android:id="@+id/bt_dd_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:background="@drawable/border_button"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp"
+        android:textAllCaps="false"
+        android:text="Filter Donor "/>
+
+
+    <TextView
+        android:id="@+id/t_dd_avail_don"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:text="Available Donor"
+        android:visibility="invisible"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/dd_text_head_color"
+        android:layout_marginBottom="10sp"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lay_dd_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:background="@color/transparent"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        >
+
+        <TextView
+            android:id="@+id/dd_t_full_nam"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Full Name"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@color/dd_text_back_color"
+            android:textColor="@color/dd_text_color"
+            android:layout_gravity="center"
+            android:layout_marginRight="5sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.38"
+            app:layout_constraintEnd_toStartOf="@id/dd_t_bl_grp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            />
+
+        <TextView
+            android:id="@+id/dd_t_bl_grp"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="Blood Group"
+            android:textColor="@color/dd_text_color"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@color/dd_text_back_color"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            app:layout_constraintWidth_percent="0.18"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/dd_t_dist"
+            app:layout_constraintStart_toEndOf="@id/dd_t_full_nam"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/dd_t_dist"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dd_text_color"
+            android:textStyle="bold"
+            android:background="@color/dd_text_back_color"
+            android:textSize="20sp"
+            android:text="District"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="5sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/dd_t_bl_grp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <ProgressBar
+        android:id="@+id/pb_dd"
+        android:layout_marginTop="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/dd_t_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Donor"
+        android:visibility="invisible"
+        android:textSize="35sp"
+        android:layout_marginBottom="10sp"
+        android:layout_gravity="center"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/dd_swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dd_recyclerview"
+            android:paddingBottom="10sp"
+            android:visibility="invisible"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+</LinearLayout>
+
+
