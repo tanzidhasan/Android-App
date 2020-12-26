@@ -58,7 +58,7 @@ public class ConvAdapter extends RecyclerView.Adapter<ConvAdapter.ConvHolder> {
         final User user = conv_user.get(position);
 
         ca_firebaseDatabase.getReference("Conversations")
-                .orderByChild("m02_sender_receiver_id").equalTo(user.u01_user_id + ca_firebaseUser.getUid())
+                .orderByChild("m09_message_time_milisec_dec")
                 .addValueEventListener(new ValueEventListener() {
                     @SuppressLint("SetTextI18n")
                     @Override
@@ -66,7 +66,7 @@ public class ConvAdapter extends RecyclerView.Adapter<ConvAdapter.ConvHolder> {
                         int size = 0;
                         for (DataSnapshot snapshot : dataSnapshot.getChildren()){
                             Message message = snapshot.getValue(Message.class);
-                            if(!message.m06_is_seen){
+                            if(message.m02_sender_receiver_id.equals(user.u01_user_id + ca_firebaseUser.getUid()) && !message.m06_is_seen){
                                 size++;
                             }
                         }
@@ -179,7 +179,6 @@ public class ConvAdapter extends RecyclerView.Adapter<ConvAdapter.ConvHolder> {
 
             full_nam = view.findViewById(R.id.ci_t_recei);
             last_message = view.findViewById(R.id.ci_t_usdrm);
-            last_message.setMaxWidth(650);
             message_time = view.findViewById(R.id.ci_t_time);
 
             view.setOnClickListener(new View.OnClickListener() {

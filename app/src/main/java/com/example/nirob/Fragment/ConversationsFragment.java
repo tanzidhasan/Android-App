@@ -209,16 +209,16 @@ public class ConversationsFragment extends Fragment {
                                 @Override
                                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                     conv_users.clear();
-                                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                                        User user = snapshot.getValue(User.class);
-                                        for(String uid : users_list){
+                                    for(String uid : users_list){
+                                        for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                                            User user = snapshot.getValue(User.class);
                                             if(user.u01_user_id.equals(uid)){
                                                 conv_users.add(user);
                                                 break;
                                             }
                                         }
-
                                     }
+
 
                                     getconversations(conv_users);
 

@@ -25,6 +25,7 @@
             android:id="@+id/c_i_msg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:maxWidth="250sp"
             android:paddingLeft="10sp"
             android:paddingRight="10sp"
             android:paddingTop="5sp"

@@ -115,6 +115,7 @@ public class DonorDetailsFragment extends Fragment {
 
         dd_firebaseDatabase.getReference("Users").orderByChild("u08_last_blood_donation_milisec")
                 .addValueEventListener(new ValueEventListener() {
+                    @SuppressLint("SetTextI18n")
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
@@ -125,6 +126,7 @@ public class DonorDetailsFragment extends Fragment {
                                 dd_user_list.add(user);
                             }
                         }
+                        dd_t_avail_don.setText("Available Donor");
                         finddonor(dd_user_list);
 
                     }
@@ -239,6 +241,9 @@ public class DonorDetailsFragment extends Fragment {
             if(donor_list.size() != 1){
                 String get_text = (String) dd_t_avail_don.getText();
                 dd_t_avail_don.setText(get_text + "s");
+            }else{
+                String get_text = (String) dd_t_avail_don.getText();
+                dd_t_avail_don.setText(get_text);
             }
             dd_pb.setVisibility(View.GONE);
             dd_bt_filter.setVisibility(View.VISIBLE);

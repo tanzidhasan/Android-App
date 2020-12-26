@@ -113,7 +113,7 @@ public class ChatActivity extends AppCompatActivity {
                     }
                 });
 
-
+        
         c_ib.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

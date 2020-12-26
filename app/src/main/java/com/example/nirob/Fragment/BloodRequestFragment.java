@@ -112,6 +112,7 @@ public class BloodRequestFragment extends Fragment {
                                 br_post_list.add(post);
                             }
                         }
+                        t_rec_post.setText("Recent Post");
                         refreshData(br_post_list);
                     }
 
@@ -172,6 +173,7 @@ public class BloodRequestFragment extends Fragment {
     }
 
 
+    @SuppressLint("SetTextI18n")
     public void refreshData(List<Post> post_list){
 
 
@@ -227,6 +229,7 @@ public class BloodRequestFragment extends Fragment {
 
 
 
+    @SuppressLint("SetTextI18n")
     public void br_filterfuntion(){
         View view1 = lf.inflate(R.layout.filter_layout,null);
         br_fil_bt_needed_bl = view1.findViewById(R.id.bt_fil_needed_bl);
@@ -234,6 +237,7 @@ public class BloodRequestFragment extends Fragment {
 
         br_fil_sp_bl_grp = view1.findViewById(R.id.sp_fil_bl_grp);
         br_fil_sp_dist = view1.findViewById(R.id.sp_fil_dist);
+
 
 
         AlertDialog.Builder alertdialog1 = new AlertDialog.Builder(activity);
@@ -244,6 +248,7 @@ public class BloodRequestFragment extends Fragment {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
+                        t_rec_post.setText("Filtered Post");
 
                         if(br_fil_sp_bl_grp.getSelectedItemPosition() == 0 && br_fil_sp_dist.getSelectedItemPosition() == 0){
 
@@ -258,8 +263,6 @@ public class BloodRequestFragment extends Fragment {
                             t_br_indicator.setVisibility(View.INVISIBLE);
                             rv_br.setVisibility(View.INVISIBLE);
 
-
-                            t_rec_post.setText("Filtered Post");
 
                             if(br_fil_sp_bl_grp.getSelectedItemPosition() != 0 && br_fil_sp_dist.getSelectedItemPosition() != 0){
 

@@ -141,7 +141,11 @@ public class PostDetailsActivity extends AppCompatActivity {
             t_pd_bl_grp.setText(pd_bl_grp);
 
             pd_bl_am = extras.getString("bl_am");
-            t_pd_bl_am.setText(pd_bl_am);
+            if(pd_bl_am.equals("1")){
+                t_pd_bl_am.setText(pd_bl_am + " bag");
+            }else{
+                t_pd_bl_am.setText(pd_bl_am + " bags");
+            }
 
 
             pd_ab_dis = extras.getString("ab_dis");

@@ -120,7 +120,6 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageH
 
             c_time = view.findViewById(R.id.c_i_time);
             c_msg = view.findViewById(R.id.c_i_msg);
-            c_msg.setMaxWidth(700);
             c_is = view.findViewById(R.id.c_i_is);
 
             view.setOnClickListener(new View.OnClickListener() {

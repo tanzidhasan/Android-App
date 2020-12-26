@@ -33,6 +33,7 @@
             android:id="@+id/ci_t_usdrm"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:maxWidth="220sp"
             android:textSize="15sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
